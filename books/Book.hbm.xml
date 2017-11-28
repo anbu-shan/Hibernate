@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.books.Book" table="BOOK_DETAILS">
+   <id name="id" type="int" column="BOOK_ID">
+         <generator class="increment"/>
+      </id>
+      <property name="title" column="BOOK_TITLE" type="string"/>
+      <property name="author" column="BOOK_AUTHOR" type="string"/>
+      <property name="price" column="BOOK_PRICE" type="double"/>
+      <property name="isbn" column="ISBN_NO." type="long"/>
+      
+   <joined-subclass name="com.books.EBook" table="EBOOK">
+   <key column="id"/>
+   <property name="downloadUrl" column="DOWNLOAD_URL" type="string"/>
+   <property name="sizeInMb" column="SIZE_IN_MB" type="string"/>
+   </joined-subclass>   
+ 
+   <joined-subclass name="com.books.PaperBook" table="PAPERBOOK">
+   <key column="id"/>
+   <property name="shippingWeight" column="SHIPPING_WEIGHT" type="float"/>
+   <property name="inStock" column="IN_STOCK" type="int"/>
+   </joined-subclass>   
+ 
+ 
+   </class>
+</hibernate-mapping>
