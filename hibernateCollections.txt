@@ -1,0 +1,27 @@
+
+@OneToMany     [ Assosiation two-way ]
+@joinTable( name = "...........", 
+	joinColumns = @joinColumn( name = "..........."),
+	inverseJoinColumns = @joinColum(name = "............")
+ )
+
+@OneToMany( mappedBy = ".......(objName)...."     [ Aggregation one-way ]
+@joinTable( name = "...........", 
+	joinColumns = @joinColumn( name = "..........."),
+	inverseJoinColumns = @joinColum(name = "............")
+ )
+
+
+
+UserCredentials :
+userName
+password
+status
+
+UserProfile:
+firstName
+lastName
+emailId
+
+
+Assosiation (Bi-directional mapping)
