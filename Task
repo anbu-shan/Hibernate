@@ -1,0 +1,27 @@
+Book
+ book_id,int
+ title,string
+ price,double
+ isbn_no,string
+ publisher,string
+ edition,string
+
+EBook
+ downloadurl,string
+ sizeinmb,int
+
+PaperBook
+ shippingweight,float
+ instock,int
+
+inheritancetype : single table
+discrimininator type
+
+Author
+ id,int
+ name,string
+ email,string
+ gender,string
+ weburl,string
+
+Author - Book(1 to 1, 1 to M, M to M)
