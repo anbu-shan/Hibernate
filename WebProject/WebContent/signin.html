@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='shortcut icon' href='/pyrun/images/fav.png' type='image/x-icon'/>
+
+<meta charset="ISO-8859-1">
+<title>Sign In</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+<style>
+span.pw{
+float:right;
+padding-top: 1px;
+}
+</style></head>
+<body>
+
+<div class="container" style = "width:320px; border:thin solid #cecece">
+ 			
+                <form class="form-signin" action="LoginValidate" method="post">
+               <center><img src="sign.png"/></center>
+                <br>
+                <div class="form-group" style="border: thin;">
+                	<label for="username">Username</label>
+                    <input type="text" class="form-control" name = "user" id ="username" placeholder="Username here" required autofocus  />
+                </div>
+                <div class="form-group">
+                	<label for="password">Password</label>
+                	<span class = "pw"><a class="forgotLnk" href="http://localhost:8081/web-app/signup.html">Forgot password?</a></span>
+                    <input type="password" class="form-control" name = "pass" id="password" placeholder="Password here" required />
+                </div>
+                    <input type="submit" value="Sign in" class="btn btn-primary btn-lg btn-block" />
+                    
+                </form>
+               <p align="center" style="color: silver;"> ______________________________________</p>
+                      <div>    
+                        <a href="http://localhost:8081/web-app/signup.html" class="btn btn-success btn-lg btn-block">Need an Account</a>
+                        </div>
+                        <br>
+                        <br>
+                        <p align ="center">©codit.teampython.kce@gmail.com</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+</html>
